@@ -3,16 +3,16 @@ from pyrogram import Client
 from aiohttp import ClientSession
 
 TRIGGERS = os.environ.get("TRIGGERS", "/ !").split()
-API_HASH = os.environ.get("API_HASH")
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
-BOT_NAME = os.environ.get("BOT_NAME")
-DB_URL = os.environ.get("DATABASE_URL")
-ANILIST_CLIENT = os.environ.get("ANILIST_CLIENT")
-ANILIST_SECRET = os.environ.get("ANILIST_SECRET")
+API_HASH = os.environ.get("API_HASH","12bbd720f4097ba7713c5e40a11dfd2a")
+BOT_TOKEN = os.environ.get("BOT_TOKEN","6206599982:AAHlSuj0dD0ETAr7GuWBojmhFPzROr8t250")
+BOT_NAME = os.environ.get("BOT_NAME","@AboutNanoBot")
+DB_URL = os.environ.get("DATABASE_URL","mongodb+srv://sonu55:sonu55@cluster0.vqztrvk.mongodb.net/?retryWrites=true&w=majority")
+ANILIST_CLIENT = os.environ.get("ANILIST_CLIENT","13037")
+ANILIST_SECRET = os.environ.get("ANILIST_SECRET","5urKejPuc7qVI5sj8lt9NqP946NAFGuT2iAZrBQo")
 ANILIST_REDIRECT_URL = os.environ.get("ANILIST_REDIRECT_URL", "https://anilist.co/api/v2/oauth/pin")
-API_ID = int(os.environ.get("API_ID"))
-LOG_CHANNEL_ID = int(os.environ.get("LOG_CHANNEL_ID"))
-OWNER = list(filter(lambda x: x, map(int, os.environ.get("OWNER_ID", "1005170481 804248372 1993696756").split())))  ## sudos can be included
+API_ID = int(os.environ.get("API_ID","16743442"))
+LOG_CHANNEL_ID = int(os.environ.get("LOG_CHANNEL_ID","-1001596651023"))
+OWNER = list(filter(lambda x: x, map(int, os.environ.get("OWNER_ID", "1005170481 6198858059 1993696756").split())))  ## sudos can be included
 
 DOWN_PATH = "anibot/downloads/"
 HELP_DICT = dict()
