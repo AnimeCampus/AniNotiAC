@@ -4,8 +4,8 @@ from aiohttp import ClientSession
 
 TRIGGERS = os.environ.get("TRIGGERS", "/ !").split()
 API_HASH = os.environ.get("API_HASH","12bbd720f4097ba7713c5e40a11dfd2a")
-BOT_TOKEN = os.environ.get("BOT_TOKEN","6206599982:AAHlSuj0dD0ETAr7GuWBojmhFPzROr8t250")
-BOT_NAME = os.environ.get("BOT_NAME","@AboutNanoBot")
+BOT_TOKEN = os.environ.get("BOT_TOKEN","6291798287:AAEKgKeZ379EJgoVHmbIuYggS1leIzxVxOA")
+BOT_NAME = os.environ.get("BOT_NAME","@AnimeNotificationsBot")
 DB_URL = os.environ.get("DATABASE_URL","mongodb+srv://sonu55:sonu55@cluster0.vqztrvk.mongodb.net/?retryWrites=true&w=majority")
 ANILIST_CLIENT = os.environ.get("ANILIST_CLIENT","13037")
 ANILIST_SECRET = os.environ.get("ANILIST_SECRET","5urKejPuc7qVI5sj8lt9NqP946NAFGuT2iAZrBQo")
