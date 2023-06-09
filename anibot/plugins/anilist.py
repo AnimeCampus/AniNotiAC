@@ -395,7 +395,7 @@ async def flex_cmd(client: Client, message: Message, mdata: dict):
         if not len(query) == 2:
             k = await message.reply_text(
 """Please give an anilist username to search about
-example: /user SexyNano"""
+example: /user NanoSay"""
 )
             await asyncio.sleep(5)
             return await k.delete()
