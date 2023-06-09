@@ -439,7 +439,7 @@ ID: `{user}`""",
         await client.send_message(
             gid,
             text=(
-                f"Kon'nichiwa!!!\n"
+                f"Holaa!!!\n"
                 +f"I'm {bot.first_name} bot and I can help you get info on "
                 +f"Animes, Mangas, Characters, Airings, Schedules, Watch "
                 +f"Orders of Animes, etc."
@@ -576,7 +576,7 @@ async def connect_(client: Client, message: Message, mdata: dict):
                     text=(
                         "Channel already connected"
                         +"\nIf someone else has access to it who doesn't own "
-                        +"the channel, contact @hanabi_support"
+                        +"the channel, contact @Anime_Krew"
                     )
                 )
                 return
@@ -685,7 +685,7 @@ async def stats_(client: Client, message: Message, mdata: dict):
     s = await SP_GRPS.estimated_document_count()
     a = await AG.estimated_document_count()
     c = await CR_GRPS.estimated_document_count()
-    kk = requests.get("https://api.github.com/repos/lostb053/anibot").json()
+    kk = requests.get("https://api.github.com/repos/PyroUserBot/AniNotiAC").json()
     await x.edit_text(f"""
 Stats:-
 
@@ -729,7 +729,7 @@ async def feed_(client: Client, message: Message, mdata: dict):
     await client.send_message(
         mdata['chat']['id'],
         f"For issues or queries please contact "
-        +f"@{owner} or join @hanabi_support"
+        +f"@{owner} or join @Anime_Krew"
     )
 
 ###### credits to @NotThatMF on tg since he gave me the code for it ######
